@@ -25,12 +25,16 @@ public class LearnServlets implements Servlet {
 	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
+		String s1 = request.getParameter("value1");
+		String s2 = request.getParameter("value2");
+		
 
 		PrintWriter out = response.getWriter();
 
-		out.write("<h1> Hi! this is being printed from the Service Method of the servlet LearnServlets!</h1>");
+		out.write("<h1> Hi "+s1+" "+s2+"!"+"<br> this is being printed from the Service Method of the servlet LearnServlets!</h1>");
+		
 
-		System.out.println("Hi! This is being called from the service method");
+		System.out.println("Hi! This is being called from the service method and you have passed the 2 Values "+ s1+"and "+s2);
 		// TODO Auto-generated method stub
 
 	}
