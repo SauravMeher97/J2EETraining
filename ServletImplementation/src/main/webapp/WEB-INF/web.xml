@@ -9,4 +9,14 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LearnServlets</display-name>
+    <servlet-name>LearnServlets</servlet-name>
+    <servlet-class>com.LearnServlets</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LearnServlets</servlet-name>
+    <url-pattern>/LearnServlets</url-pattern>
+  </servlet-mapping>
 </web-app>
