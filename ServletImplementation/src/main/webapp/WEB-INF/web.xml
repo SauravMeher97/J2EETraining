@@ -17,6 +17,16 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>LearnServlets</servlet-name>
-    <url-pattern>/LearnServlets</url-pattern>
+    <url-pattern>/ls1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LearnServlets2</display-name>
+    <servlet-name>LearnServlets2</servlet-name>
+    <servlet-class>com.LearnServlets2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LearnServlets2</servlet-name>
+    <url-pattern>/ls2</url-pattern>
   </servlet-mapping>
 </web-app>
